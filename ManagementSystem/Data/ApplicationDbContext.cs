@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using ManagementSystem.Models;
 
 namespace ManagementSystem.Data
 {
@@ -12,5 +13,6 @@ namespace ManagementSystem.Data
             : base(options)
         {
         }
+        public DbSet<IoTDevice> IoTDevice { get; set; }
     }
 }
